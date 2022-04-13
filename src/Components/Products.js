@@ -11,7 +11,7 @@ const Products = () => {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      let response = await fetch("http://fakestoreapi.com/products");
+      let response = await fetch("https://fakestoreapi.com/products");
 
       if (componentMounted) {
         setData(await response.clone().json());
